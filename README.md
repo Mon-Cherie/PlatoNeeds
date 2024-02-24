@@ -49,7 +49,7 @@
     </style>
 </head>
 <body>
-    <h2>Calculator Items</h2>
+    <h2>Calculator Items Plato</h2>
     <p>This Calculator is run by <a href="https://x.com/PlatoNeeds" target="_blank">PlatoNeeds</a></p>
     
     <form id="calculatorForm">
@@ -107,8 +107,6 @@
     <br> <!-- Spasi ke bawah -->
 
     <p>Kalkulator ini digunakan untuk memeriksa harga items Plato yang ingin customers beli. Jika ingin mengecek nama dan harga items lebih detail, bisa cek melalui web <a href="https://platopedia.com/items" target="_blank">platopedia.com/items</a> lalu jumlahkan di web ini.</p>
-
-    <br> <!-- Spasi ke bawah -->
 
     <p class="footer">Last Update: 24/02/2024 | <a href="https://x.com/PlatoNeeds" target="_blank">@PlatoNeeds</a></p>
 
