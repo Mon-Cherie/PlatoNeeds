@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -106,6 +105,9 @@
     <div id="result"></div>
 
     <p>Kalkulator ini digunakan untuk memeriksa harga items Plato yang ingin customers beli. Jika ingin mengecek nama dan harga items lebih detail, bisa cek melalui web <a href="https://platopedia.com/items" target="_blank">platopedia.com/items</a> lalu jumlahkan di web ini.</p>
+
+    <br><br><br> <!-- Spasi 3x ke bawah -->
+
     <p class="footer">Last Update: 24/02/2024 | <a href="https://x.com/PlatoNeeds" target="_blank">@PlatoNeeds</a></p>
 
     <script>
