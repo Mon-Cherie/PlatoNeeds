@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator Items</title>
+    <title>Calculator Items Plato</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
