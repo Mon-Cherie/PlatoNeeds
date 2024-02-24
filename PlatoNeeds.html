@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Cheri Calculator</title>
+    <title>Calculator Items</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -49,8 +49,8 @@
     </style>
 </head>
 <body>
-    <h2>Mon Cheri Calculator</h2>
-    <p>This Calculator is run by <a href="https://x.com/PlatoNeeds" target="_blank">x.com/PlatoNeeds</a></p>
+    <h2>Calculator Items</h2>
+    <p>This Calculator is run by <a href="https://x.com/PlatoNeeds" target="_blank">PlatoNeeds</a></p>
     
     <form id="calculatorForm">
         <label for="jenisItems">Jenis Items:</label>
@@ -104,9 +104,9 @@
 
     <div id="result"></div>
 
-    <br> <!-- Spasi ke bawah -->
-
     <p>Kalkulator ini digunakan untuk memeriksa harga items Plato yang ingin customers beli. Jika ingin mengecek nama dan harga items lebih detail, bisa cek melalui web <a href="https://platopedia.com/items" target="_blank">platopedia.com/items</a> lalu jumlahkan di web ini.</p>
+
+    <br> <!-- Spasi ke bawah -->
 
     <p class="footer">Last Update: 24/02/2024 | <a href="https://x.com/PlatoNeeds" target="_blank">@PlatoNeeds</a></p>
 
