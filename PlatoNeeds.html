@@ -2,67 +2,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator Items Plato</title>
+    <title>Calculator Items</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             text-align: center;
             margin: 10px;
-            background-color: #ffe6f2; /* Pink pastel background */
-            color: #ff1a75; /* Dark pink text */
+            background-color: #FFFFFF; /* Warna putih */
+            color: #343A40; /* Warna abu-abu kehitaman */
         }
 
         h2 {
-            color: #ff66b2; /* Darker pink for headings */
-            font-size: 24px; /* Adjust font size */
-            margin-bottom: 5px; /* Add margin for separation */
+            color: #343A40; /* Warna abu-abu kehitaman */
+            font-size: 24px; /* Ukuran font */
+            margin-bottom: 5px; /* Margin bawah */
         }
 
         p {
-            font-size: 12px; /* Smaller font size for description */
-            color: #ff1a75; /* Dark pink text */
-            margin-bottom: 10px; /* Add margin for separation */
+            font-size: 12px; /* Ukuran font */
+            color: #343A40; /* Warna abu-abu kehitaman */
+            margin-bottom: 10px; /* Margin bawah */
         }
 
         form {
-            background-color: #ffd9e6; /* Light pink form background */
+            background-color: #343A40; /* Warna abu-abu kehitaman */
             padding: 15px;
             border-radius: 10px;
             display: inline-block;
             margin-top: 10px;
         }
 
-        label, select, button {
+        label {
+            color: #FFFFFF; /* Warna putih */
             margin: 5px;
-            font-size: 14px; /* Adjust font size */
+            font-size: 14px; /* Ukuran font */
+        }
+
+        select, button {
+            margin: 5px;
+            font-size: 14px; /* Ukuran font */
+            color: #343A40; /* Warna abu-abu kehitaman */
         }
 
         #result {
             margin-top: 10px;
             font-weight: bold;
+            color: #343A40; /* Warna abu-abu kehitaman */
+        }
+
+        .iframe-container {
+            margin-top: 20px; /* Jarak antara kalkulator dan iframe */
+            margin-bottom: 20px; /* Jarak antara iframe dan footer */
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* Ratio 16:9 */
+        }
+
+        .iframe-container iframe {
+            border: 0;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
         }
 
         .footer {
-            font-size: 10px; /* Smaller font size for footer */
+            font-size: 10px; /* Ukuran font */
             margin-top: 20px;
+            color: #343A40; /* Warna abu-abu kehitaman */
         }
     </style>
 </head>
 <body>
-    <h2>Calculator Items Plato</h2>
-    <p>This Calculator is run by <a href="https://x.com/PlatoNeeds" target="_blank">PlatoNeeds</a></p>
+    <h2>Calculator Items</h2>
+    <p>This Calculator is run by <a href="https://x.com/PlatoNeeds" target="_blank" style="color: #343A40;">PlatoNeeds</a></p>
     
     <form id="calculatorForm">
-        <label for="jenisItems">Jenis Items:</label>
-        <select id="jenisItems" required>
+        <label for="jenisItems" style="color: #FFFFFF;">Jenis Items:</label>
+        <select id="jenisItems" required style="color: #343A40;">
             <option value="9">Items Shop</option>
             <option value="12">Items Rare</option>
         </select>
 
         <br> <!-- Spasi ke bawah -->
 
-        <label for="hargaItems">Harga Items:</label>
-        <select id="hargaItems" required>
+        <label for="hargaItems" style="color: #FFFFFF;">Harga Items:</label>
+        <select id="hargaItems" required style="color: #343A40;">
             <!-- Opsi harga items -->
             <!-- Anda dapat menambahkan lebih banyak opsi sesuai kebutuhan -->
             <option value="50">50 coins</option>
@@ -99,34 +126,31 @@
 
         <br> <!-- Spasi ke bawah -->
 
-        <button type="button" onclick="calculateTotal()">Hitung Total</button>
+        <button type="button" onclick="calculateTotal()" style="color: #343A40;">Hitung Total</button>
     </form>
 
     <div id="result"></div>
 
-    <br> <!-- Spasi ke bawah -->
+    <p>Kalkulator ini difungsikan untuk memeriksa harga barang Plato yang akan dibeli oleh pelanggan. Silakan cari nama items dan harga koinnya di situs web <a href="https://platopedia.com/items" target="_blank" style="color: #343A40;">platopedia.com/items</a>.</p>
 
-    <p>Kalkulator ini digunakan untuk memeriksa harga items Plato yang ingin customers beli. Jika ingin mengecek nama dan harga items lebih detail, bisa cek melalui web <a href="https://platopedia.com/items" target="_blank">platopedia.com/items</a> lalu jumlahkan di web ini.</p>
+    <div class="footer">
+        Last Update: 25/02/2024  |  Mon Cheri.
+        <br>
+        Web Platopedia: <a href="https://platopedia.com/items" target="_blank" style="color: #343A40;">platopedia.com/items</a> (Sumber: Platopedia)
+    </div>
 
-    <p class="footer">Last Update: 24/02/2024 | <a href="https://x.com/PlatoNeeds" target="_blank">@PlatoNeeds</a></p>
+    <div class="iframe-container">
+        <iframe src="https://platopedia.com/items" width="800" height="600" frameborder="0" allowfullscreen></iframe>
+    </div>
 
     <script>
-        // Fungsi untuk menghitung total dan menampilkan hasil
         function calculateTotal() {
-            var jenisItems = parseInt(document.getElementById("jenisItems").value);
-            var hargaItems = parseInt(document.getElementById("hargaItems").value);
-            var totalHarga;
+            var jenisItems = document.getElementById('jenisItems').value;
+            var hargaItems = document.getElementById('hargaItems').value;
 
-            // Menggunakan rumus sesuai dengan jenis items yang dipilih
-            if (jenisItems === 9) {
-                totalHarga = jenisItems * hargaItems;
-            } else if (jenisItems === 12) {
-                totalHarga = hargaItems < 5001 ? 12 * hargaItems : 11 * hargaItems;
-            }
+            var totalHarga = jenisItems * hargaItems;
 
-            // Tampilkan hasil
-            var resultDiv = document.getElementById("result");
-            resultDiv.textContent = `Total Harga: Rp${totalHarga.toLocaleString()}`;
+            document.getElementById('result').innerHTML = `Total Harga: ${totalHarga.toLocaleString()}`;
         }
     </script>
 </body>
