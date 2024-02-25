@@ -133,14 +133,14 @@
 
     <p>Kalkulator ini difungsikan untuk memeriksa harga barang Plato yang akan dibeli oleh pelanggan. Silakan cari nama items dan harga koinnya di situs web <a href="https://platopedia.com/items" target="_blank" style="color: #343A40;">platopedia.com/items</a>.</p>
 
-    <div class="footer">
+    <div class="iframe-container">
+        <iframe src="https://platopedia.com/items" width="800" height="800" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+        <div class="footer">
         Last Update: 25/02/2024  |  Mon Cheri.
         <br>
         Web Platopedia: <a href="https://platopedia.com/items" target="_blank" style="color: #343A40;">platopedia.com/items</a> (Sumber: Platopedia)
-    </div>
-
-    <div class="iframe-container">
-        <iframe src="https://platopedia.com/items" width="800" height="600" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <script>
